@@ -1,0 +1,5 @@
+#List all real users on the VM
+
+awk -F: '$3 >= 1000 && $1 != "nobody" {print $1}' /etc/passwd
+#Human users have UIDs starting at 1000, so you can use that fact to filter out the non-humans. Nobody's UID is UID 65534 so we should exclude this one too
+#UID 0 is reserved for root and UIDs 1-99 are reserved for other predefined accounts. Further UID 100-999 are reserved by system for administrative and system accounts/groups.

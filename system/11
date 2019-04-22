@@ -1,0 +1,4 @@
+#Name the command that displays the available space left and used on the system in an humanly understandable way
+df -h --total
+# --total for total count in the bottom
+# df shows the amount of disk space available on the currently mounted file system

@@ -1,0 +1,16 @@
+#!/bin/bash
+#Three’s a Charm. Write a script of you choice.
+#This script checks if the user is real/system/doesn't_exist
+USER=$1
+real=$(cat /etc/passwd | grep '/home' | grep "$USER" | cut -d":" -f1)
+syst=$(cat /etc/passwd | grep "$USER" | cut -d":" -f1)
+echo "$USER is:"
+if [ "$real" == "$USER" ]
+then
+	echo "a real user"
+elif [ "$syst" == "$USER" ]
+then
+	echo "not a real user"
+else
+	echo "not a user"
+fi

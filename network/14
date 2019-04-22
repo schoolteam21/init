@@ -1,0 +1,3 @@
+#What file contains the local DNS entries?
+/etc/hosts
+#This file contains pair of ip and site. if the pair exists there will be no dns-query

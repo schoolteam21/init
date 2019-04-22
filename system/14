@@ -1,0 +1,5 @@
+#Run the ‘tail -f /var/log/syslog‘ command in background
+tail -f /var/log/syslog &
+
+#to a process directly from the background using the & sign.
+#tail prints the last 10 lines of each FILE to standard output. With more than one FILE, it precedes each set of output with a header giving the file name. If no FILE is specified, or if FILE is specified as a dash ("-"), tail reads from standard input.

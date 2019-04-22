@@ -1,0 +1,5 @@
+#Explain how connect yourself as new user. (With graphic session and ssh session)
+
+Graphical : you should write "login" command and than debian will ask for user name and password and you need to fill the fields.
+Probably this needs superuser rights so wee need to go to root or to have the rights.
+SSH : write "ssh new_user@ip" and after put your password, f.e. "ssh new_user@192.168.99.2 -p 2222"

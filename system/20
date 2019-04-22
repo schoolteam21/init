@@ -1,0 +1,4 @@
+#List all existing users on the VM
+passwd -S -a | cut -d" " -f1
+
+#cat /etc/passwd

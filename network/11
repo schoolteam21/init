@@ -1,0 +1,22 @@
+#Use the output of the previous command to find the name and IP address of the device that makes the link between you (local network) and the outside world
+
+traceroute: Warning: slash16.org has multiple addresses; using 13.32.43.171
+traceroute to slash16.org (13.32.43.171), 64 hops max, 52 byte packets
+1  192.168.20.1 (192.168.20.1)  1.659 ms  0.928 ms  0.890 ms
+2  192.168.2.9 (192.168.2.9)  0.362 ms  0.312 ms  0.262 ms
+3  217-67-187-49.in-addr.mastertelecom.ru (217.67.187.49)  5.557 ms  6.337 ms  7.430 ms
+4  mail.neoresurs.ru (217.67.176.130)  0.519 ms  0.462 ms  0.423 ms
+5  217-67-176-205.in-addr.mastertelecom.ru (217.67.176.205)  1.419 ms  1.383 ms  1.312 ms
+6  ae11-227.rt.mr.msk.ru.retn.net (87.245.253.69)  0.992 ms  0.975 ms  0.985 ms
+7  ae5-8.rt.rad.hki.fi.retn.net (87.245.233.174)  34.272 ms  17.553 ms  17.148 ms
+8  52.46.167.62 (52.46.167.62)  17.832 ms  17.117 ms  17.925 ms
+9  * * *
+10  * * *
+11  * * *
+12  * * *
+13  * * *
+14  * * *
+15  * * *
+16  server-13-32-43-171.hel50.r.cloudfront.net (13.32.43.171)  17.875 ms  17.985 ms  17.011 ms
+
+217-67-187-49 this ip is the first not local == NAT 

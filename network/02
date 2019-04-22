@@ -1,0 +1,8 @@
+#Identify and display the Ethernet interface characteristics:
+
+#Identify broadcast address
+ifconfig -a | grep "broadcast" | cut -d " " -f 6
+
+#Identify all IP adresses which are part of the same subnet
+ping 192.168.23.255 | arp -a | awk '!/\?/' | awk '/\(/ {print $2}'
+# For example, if you IP is 192.168.1.101 and subnet mask is 255.255.255.0, then the network address is 192.168.1.0. Ping your network using a broadcast address, i.e. "ping 192.168.1.255". After that, perform "arp -a" to determine all the computing devices connected to the network.
